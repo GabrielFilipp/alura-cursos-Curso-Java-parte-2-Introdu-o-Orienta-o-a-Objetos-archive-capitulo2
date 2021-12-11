@@ -13,7 +13,7 @@ public class TestaMetodo {
 		Conta contaDaMarcela = new Conta();
 		contaDaMarcela.deposita(1000);
 
-		if (contaDaMarcela.transfere(1000, contaDoPaulo)) {
+		if (contaDaMarcela.transfere(3000, contaDoPaulo)) {
 			System.out.println("transferencia com sucesso");
 		} else {
 			System.out.println("faltou dinheiro");
@@ -22,5 +22,8 @@ public class TestaMetodo {
 
 		System.out.println(contaDaMarcela.saldo);
 		System.out.println(contaDoPaulo.saldo);
+		
+		contaDoPaulo.titular = "paulo silveira";
+		System.out.println(contaDoPaulo.titular);
 	}
 }
